@@ -72,6 +72,7 @@ const AddFirm = () => {
         localStorage.setItem('firmName',firmName);
         const firmId=data.firmId
         localStorage.setItem('firmId',firmId);
+        window.location.reload()
       } else {
         alert(data.message || 'Failed to add Firm');
       }
