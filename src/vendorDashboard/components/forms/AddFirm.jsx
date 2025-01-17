@@ -51,6 +51,7 @@ const AddFirm = () => {
       region.forEach((value) => {
         formData.append('region', value);
       });
+      console.log(formData)
 
       const response = await fetch(`${API_URL}/firm/add-firm`, {
         method: 'POST',
